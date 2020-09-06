@@ -1,9 +1,10 @@
 import React from 'react';
 import CharacterItems from "./CharacterItems.js";
+import Spinner from './Spinner.js';
 
 const CharacterGrid = ({isLoading, items}) => {
     if(isLoading) return(
-        <h1>Loading...</h1>
+        <Spinner />
     )
     else return(
         <section className='cards'>
